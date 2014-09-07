@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IrainCloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WebRole name="Irain-M">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.ActivationToken" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.Refresh" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.Diagnostics" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.WaitForConnectivity" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.EnableDomainJoin" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainFQDN" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainControllerFQDN" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainAccountName" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainPassword" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainOU" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DNSServers" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.Administrators" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainSiteName" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" localPort="80" />
+    </Endpoints>
+    <Certificates />
+  </WebRole>
+</ServiceDefinition>

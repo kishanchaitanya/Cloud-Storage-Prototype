@@ -1,0 +1,5 @@
+D:\CloudTest\Irain-M\Irain-M\bin\Irain-M.dll
+D:\CloudTest\Irain-M\Irain-M\bin\Irain-M.pdb
+D:\CloudTest\Irain-M\Irain-M\obj\Debug\ResolveAssemblyReference.cache
+D:\CloudTest\Irain-M\Irain-M\obj\Debug\Irain-M.dll
+D:\CloudTest\Irain-M\Irain-M\obj\Debug\Irain-M.pdb

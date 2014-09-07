@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Irain_M.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>IRAIN-Sharing</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="header">
+    	<a href="home.aspx"><img src="images/logo.png" title="Affiliate Promo logo" id="logo" alt="Logo" /></a>
+        <ul id="navBar">
+        	<li><a href="home.aspx">Home</a></li>
+        	<li><a href="about.aspx">About us</a></li>
+            <li><a href="contact.aspx">Contact Us</a></li>          
+            <li><a href="Default.aspx">Logout</a></li>            
+        </ul>
+    </div>
+     <form id="form1" runat="server">
+    <div style="text-align: left">
+        &nbsp;<br />
+        <br />
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<strong><span style="font-size: 10pt"><span style="font-size: 12pt">Welcome </span></span></strong>
+           <asp:Label ID="Label1" runat="server" Text="Label" Visible="False" ForeColor="#FF9900" Font-Size="12pt"></asp:Label><strong><span
+            style="font-size: 10pt"><span style="font-size: 12pt">&nbsp;<br />
+                <br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #3399ff">SHARING:</span></span></span></strong><br />
+        <div id="wrapper">
+            <div id="secWrapper">
+                <div id="container" class="clearfix">
+                    <table style="width: 880px; height: 328px">
+                        <tr>
+                            <td style="width: 15px; height: 20px;">
+                                <asp:Label ID="Label2" runat="server" Font-Bold="False" Font-Size="14pt" ForeColor="Black"
+                                    Text="Upload Data's" Width="122px"></asp:Label></td>
+                            <td rowspan="6" style="width: 454px">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 15px; height: 20px;">
+                                <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="14pt" Width="156px" PostBackUrl="~/DocumentUpload.aspx">Document Upload</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 15px; height: 20px;">
+                                <asp:LinkButton ID="LinkButton3" runat="server" Font-Size="14pt" Width="120px" PostBackUrl="~/audioupload.aspx">Audio Upload</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 15px; height: 20px;">
+                                <asp:LinkButton ID="LinkButton4" runat="server" Font-Size="14pt" Width="119px" PostBackUrl="~/videoupload.aspx">Video Upload</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 15px; height: 20px;">
+                                <asp:LinkButton ID="LinkButton5" runat="server" Font-Size="14pt" Width="121px" PostBackUrl="~/imageupload.aspx">Image Uplaod</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 15px; height: 20px;">
+                                <asp:LinkButton ID="LinkButton6" runat="server" Font-Size="14pt" Width="255px" OnClick="LinkButton6_Click">View and Download all Data's</asp:LinkButton></td>
+                        </tr>
+                    </table>
+                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+    </div>
+    </form>
+    &nbsp;
+</body>
+</html>
+
